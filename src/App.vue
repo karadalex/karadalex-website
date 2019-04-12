@@ -1,9 +1,17 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+		<template v-if="$route.name !== 'computer'">
+			<div id="nav">
+				<router-link to="/home">Home</router-link> |
+				<router-link to="/about">About</router-link> |
+				<router-link to="/contact">Contact</router-link> |
+				<router-link to="/blog">Blog</router-link> |
+				<router-link to="/portfolio">Portfolio</router-link> |
+				<router-link to="/cv">Curriculum Vitae</router-link> |
+				<router-link to="/press">Press</router-link> |
+				<router-link to="/">Switch View</router-link>
+			</div>
+		</template>
     <router-view/>
   </div>
 </template>
