@@ -3,6 +3,7 @@
     <router-link to="/home">Switch View</router-link>
     <!-- <Browser app="about"/> -->
     <Topbar/>
+    <Dock />
   </div>
 </template>
 
@@ -10,11 +11,12 @@
 // @ is an alias to /src
 import Browser from '@/components/Browser.vue';
 import Topbar from '@/components/Topbar.vue';
+import Dock from '@/components/Dock.vue';
 
 export default {
   name: 'computer',
   components: {
-    Browser, Topbar
+    Browser, Topbar, Dock
   },
 };
 </script>
