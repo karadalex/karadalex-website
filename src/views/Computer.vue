@@ -1,19 +1,20 @@
 <template>
   <div class="operating-system-view">
-    <h1>Operating System</h1>
     <router-link to="/home">Switch View</router-link>
-    <Browser app="about"/>
+    <!-- <Browser app="about"/> -->
+    <Topbar/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Browser from '@/components/Browser.vue';
+import Topbar from '@/components/Topbar.vue';
 
 export default {
   name: 'computer',
   components: {
-    Browser,
+    Browser, Topbar
   },
 };
 </script>
