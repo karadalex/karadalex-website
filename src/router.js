@@ -1,20 +1,26 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Vue from 'vue';
+import Router from 'vue-router';
+import Home from './views/Home.vue';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
     {
       path: '/',
       name: 'computer',
-      component: () => import(/* webpackChunkName: "about" */ './views/Computer.vue')
+      component: () => import(/* webpackChunkName: "about" */ './views/Computer.vue'),
     },
+    // Uncomment the below to disable computer view
+    // {
+    //   path: '/',
+    //   name: 'home',
+    //   component: Home
+    // },
     {
       path: '/home',
       name: 'home',
-      component: Home
+      component: Home,
     },
     {
       path: '/about',
@@ -22,32 +28,32 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
     },
     {
       path: '/contact',
       name: 'contact',
-      component: () => import(/* webpackChunkName: "about" */ './views/Contact.vue')
+      component: () => import(/* webpackChunkName: "about" */ './views/Contact.vue'),
     },
     {
       path: '/blog',
       name: 'blog',
-      component: () => import(/* webpackChunkName: "about" */ './views/Blog.vue')
+      component: () => import(/* webpackChunkName: "about" */ './views/Blog.vue'),
     },
     {
       path: '/portfolio',
       name: 'portfolio',
-      component: () => import(/* webpackChunkName: "about" */ './views/Portfolio.vue')
+      component: () => import(/* webpackChunkName: "about" */ './views/Portfolio.vue'),
     },
     {
       path: '/cv',
       name: 'cv',
-      component: () => import(/* webpackChunkName: "about" */ './views/CV.vue')
+      component: () => import(/* webpackChunkName: "about" */ './views/CV.vue'),
     },
     {
       path: '/press',
       name: 'press',
-      component: () => import(/* webpackChunkName: "about" */ './views/Press.vue')
+      component: () => import(/* webpackChunkName: "about" */ './views/Press.vue'),
     },
-  ]
-})
+  ],
+});
