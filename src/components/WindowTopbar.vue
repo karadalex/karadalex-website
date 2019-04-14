@@ -36,7 +36,7 @@ export default {
 }
 
 .os-window-topbar-name {
-  margin-left: 40%;
+  margin-left: 30%;
 }
 
 // Window buttons

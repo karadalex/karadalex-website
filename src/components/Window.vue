@@ -114,12 +114,12 @@ export default {
   background-color: #ffffff;
   box-shadow: 0px 0px 10px rgba(49, 49, 49, 0.582);
 
-  width: 400px;
-  height: 320px;
+  width: 700px;
+  height: 400px;
   position: absolute;
   border-radius: 5px;
   // Initial position of browser window
-  top: 10vh;
+  top: 2vh;
   left: 20vw;
 }
 
