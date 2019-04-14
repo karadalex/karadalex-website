@@ -9,7 +9,7 @@
 
 <style lang="scss" scoped>
 .background {
-  // 020 New Life - https://webgradients.com/
-  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  // 041 Happy Acid - https://webgradients.com/
+  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
 }
 </style>

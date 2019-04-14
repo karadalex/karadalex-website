@@ -11,6 +11,9 @@
               <router-link class="nav-link" to="/home">Home</router-link>
             </li>
             <li class="nav-item">
+              <router-link class="nav-link" to="/cv">Curriculum Vitae</router-link>
+            </li>
+            <li class="nav-item">
               <router-link class="nav-link" to="/contact">Contact</router-link>
             </li>
             <li class="nav-item">
@@ -21,9 +24,6 @@
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/portfolio">Portfolio</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/cv">Curriculum Vitae</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/press">Press</router-link>
