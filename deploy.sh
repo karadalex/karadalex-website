@@ -18,6 +18,6 @@ git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
 git remote add origin https://github.com/karadalex/karadalex.github.io.git
-git push -u origin master
+git push -u -f origin master
 
 cd -
