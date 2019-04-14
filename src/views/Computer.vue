@@ -1,7 +1,7 @@
 <template>
   <div class="operating-system-view">
     <router-link to="/home">Switch View</router-link>
-    <!-- <Browser app="about"/> -->
+    <Browser app="about"/>
     <Topbar/>
     <Dock />
   </div>
