@@ -47,7 +47,7 @@ export default {
         autoScroll: false,
         modifiers: [
           interact.modifiers.restrict({
-            restriction: '.operating-system-view',
+            restriction: '.os-desktop',
             endOnly: true,
             elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
           })
@@ -60,7 +60,7 @@ export default {
         modifiers: [
           // keep the edges inside the parent
           interact.modifiers.restrictEdges({
-            outer: '.operating-system-view',
+            outer: '.os-desktop',
             // endOnly: true,
             elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
           }),

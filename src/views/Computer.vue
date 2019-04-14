@@ -1,22 +1,22 @@
 <template>
   <div class="operating-system-view">
     <router-link to="/home">Switch View</router-link>
-    <Browser appName="about"/>
     <Topbar/>
+    <Desktop/>
     <Dock />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Browser from '@/components/Browser.vue';
 import Topbar from '@/components/Topbar.vue';
+import Desktop from '@/components/Desktop.vue';
 import Dock from '@/components/Dock.vue';
 
 export default {
   name: 'computer',
   components: {
-    Browser, Topbar, Dock
+    Desktop, Topbar, Dock
   },
 };
 </script>
