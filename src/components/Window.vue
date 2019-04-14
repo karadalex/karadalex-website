@@ -1,14 +1,22 @@
 <template>
-  <div class="os-window resize-drag">
-    <slot></slot>
+  <div class="os-window-container">
+    <div class="os-window resize-drag">
+      <WindowTopbar :windowName="appName"/>
+      <slot></slot>
+    </div>
   </div>
 </template>
 
 <script>
 import interact from 'interactjs'
+import WindowTopbar from '@/components/WindowTopbar.vue'
 
 export default {
   name: 'Window',
+
+  components: {
+    WindowTopbar
+  },
 
   props: {
     appName: String,
@@ -17,6 +25,8 @@ export default {
   mounted: function() {
     interact('.resize-drag')
       .draggable({
+        inertia: false,
+        edges: { left: false, right: false, bottom: false, top: true },
         onmove: function (event) {
           var target = event.target,
             // keep the dragged position in the data-x/data-y attributes
@@ -32,27 +42,30 @@ export default {
           target.setAttribute('data-x', x);
           target.setAttribute('data-y', y);
         },
+        autoScroll: false,
         modifiers: [
           interact.modifiers.restrict({
-            restriction: 'parent',
+            restriction: '.operating-system-view',
+            endOnly: true,
             elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
           })
         ]
       })
       .resizable({
         // resize from all edges and corners
-        edges: { left: true, right: true, bottom: true, top: true },
+        edges: { left: true, right: true, bottom: true, top: false },
 
         modifiers: [
           // keep the edges inside the parent
           interact.modifiers.restrictEdges({
-            outer: 'parent',
-            endOnly: true,
+            outer: '.operating-system-view',
+            // endOnly: true,
+            elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
           }),
 
           // minimum size
           interact.modifiers.restrictSize({
-            min: { width: 100, height: 50 },
+            min: { width: 400, height: 320 },
           }),
         ],
 
@@ -84,8 +97,14 @@ export default {
 
 
 <style lang="scss" scoped>
+.os-window-container {
+  width: 100%;
+  height: 100%;
+}
+
 .resize-drag {
   box-sizing: border-box;
+  touch-action: none;
 }
 
 .os-window {
@@ -93,6 +112,7 @@ export default {
   width: 400px;
   height: 320px;
   position: absolute;
+  border-radius: 5px;
   // Initial position of browser window
   top: 10vh;
   left: 20vw;
