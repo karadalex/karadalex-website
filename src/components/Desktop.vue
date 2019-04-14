@@ -19,7 +19,7 @@ export default {
 
   data() {
     return {
-      icons: ["home", "contact", "cv", "blog", "cv", "press"],
+      icons: ["home", "cv", "portfolio", "blog", "research", "contact"],
       openedApps: []
     }
   },
