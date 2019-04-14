@@ -1,6 +1,6 @@
 <template>
   <div class="browser">
-    <Window appName="appName">
+    <Window :appName="appName">
       <iframe :src="'/#/'+appName"></iframe>
     </Window>
   </div>
@@ -19,3 +19,7 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+
+</style>
