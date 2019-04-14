@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 		<template v-if="$route.name !== 'computer'">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-sm navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,14 +39,42 @@
   </div>
 </template>
 
+
+<script>
+import jquery from 'jquery'
+import Collapse from '../node_modules/bootstrap/js/dist/collapse.js'
+
+export default {
+  
+}
+</script>
+
+
 <style lang="scss">
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 50vh;
+}
+
+h1 {
+  padding-top: 2rem;
+  font-weight: 300;
+  font-size: 5rem;
+  color: beige;
 }
 </style>
