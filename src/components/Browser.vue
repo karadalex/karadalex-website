@@ -21,5 +21,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+iframe {
+  border: none;
+  width: 99%;
+  height: 99%;
+}
 </style>

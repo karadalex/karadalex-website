@@ -2,7 +2,9 @@
   <div class="os-window-container">
     <div class="os-window resize-drag">
       <WindowTopbar :windowName="appName"/>
-      <slot></slot>
+      <div class="os-window-slot resize-left resize-bottom resize-right">
+        <slot></slot>
+      </div>
     </div>
   </div>
 </template>
@@ -26,7 +28,7 @@ export default {
     interact('.resize-drag')
       .draggable({
         inertia: false,
-        edges: { left: false, right: false, bottom: false, top: true },
+        edges: { left: false, right: false, bottom: false, top: '.drag-top' },
         onmove: function (event) {
           var target = event.target,
             // keep the dragged position in the data-x/data-y attributes
@@ -53,7 +55,7 @@ export default {
       })
       .resizable({
         // resize from all edges and corners
-        edges: { left: true, right: true, bottom: true, top: false },
+        edges: { left: '.resize-left', right: true, bottom: true, top: false },
 
         modifiers: [
           // keep the edges inside the parent
@@ -105,6 +107,7 @@ export default {
 .resize-drag {
   box-sizing: border-box;
   touch-action: none;
+  user-select: none;
 }
 
 .os-window {
@@ -118,11 +121,10 @@ export default {
   // Initial position of browser window
   top: 10vh;
   left: 20vw;
+}
 
-  iframe {
-    border: none;
-    width: 90%;
-    height: 90%;
-  }
+.os-window-slot {
+  width: 99%;
+  height: 99%;
 }
 </style>

@@ -44,7 +44,9 @@ export default {
   overflow: hidden;
   // margin-left: -175px;
   // margin-top: -250px;
-  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(49, 49, 49, 0.582);
 }
 
 .os-dock:before{
@@ -57,7 +59,7 @@ export default {
   bottom: 0;
   right: 0;
   background: inherit;
-  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.438);
   filter: blur(10px);
 }
 
