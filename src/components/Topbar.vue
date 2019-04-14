@@ -19,7 +19,7 @@ export default {
   right: 0;
   height: 22px;
   background-color: #d8d8d8;
-  box-shadow: 0px 10px 40px grey;
+  box-shadow: 0px 0px 10px rgba(49, 49, 49, 0.582);
   border-bottom: 1px solid #a1a1a1;
 }
 </style>

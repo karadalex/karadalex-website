@@ -109,6 +109,8 @@ export default {
 
 .os-window {
   background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(49, 49, 49, 0.582);
+
   width: 400px;
   height: 320px;
   position: absolute;
