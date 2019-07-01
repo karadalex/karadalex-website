@@ -15,7 +15,7 @@
       </div>
       <div class="row">
         <div class="col-4" v-for="(repo, key) in repos" :key="key">
-          <md-card md-with-hover>
+          <md-card class="md-elevation-10" md-with-hover>
             <md-ripple>
               <md-card-header>
                 <div class="md-title">{{ repo.name }}</div>
@@ -35,13 +35,6 @@
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped>
-.background {
-  // 021 True Sunset - https://webgradients.com/
-  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
-}
-</style>
 
 
 <script>
@@ -72,3 +65,14 @@ export default {
 }
 </script>
 
+
+<style lang="scss" scoped>
+.background {
+  // 021 True Sunset - https://webgradients.com/
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+.md-card {
+  height: 200px;
+}
+</style>
