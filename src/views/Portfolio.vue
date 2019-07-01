@@ -24,10 +24,6 @@
               <md-card-content>
                 {{ repo.description }}
               </md-card-content>
-
-              <md-card-actions>
-                <md-button>Action</md-button>
-              </md-card-actions>
             </md-ripple>
           </md-card>
         </div>
@@ -74,5 +70,7 @@ export default {
 
 .md-card {
   height: 200px;
+  margin-bottom: 50px;
+  background-color: #fdb861;
 }
 </style>
