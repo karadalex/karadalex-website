@@ -6,16 +6,16 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/sim',
       name: 'computer',
       component: () => import(/* webpackChunkName: "about" */ './views/Computer.vue'),
     },
     // Uncomment the below to disable computer view
-    // {
-    //   path: '/',
-    //   name: 'home',
-    //   component: Home
-    // },
+    {
+      path: '/',
+      name: 'home',
+      component: () => import(/* webpackChunkName: "home" */ './views/Home.vue')
+    },
     {
       path: '/home',
       name: 'home',
