@@ -1,6 +1,8 @@
 karadalex.github.io
 ===================
 
+This is the code for my personal website, which is configurable so that you can add easily your own content, like a simplified CMS.
+
 ## Features
 
 - Load public Github repositories via Github API
@@ -10,7 +12,11 @@ karadalex.github.io
 yarn install
 ```
 - Rename `config.example.json` to `config.json` and fill your details
-- Rename `posts.example.json` (in the `src/content` directory) to `posts.json` and add your blog posts
+<br>
+in the `src/content` directory:
+- Rename `posts.example.json` to `posts.json` and add your blog posts
+- Rename `aboutme.example.json` to `aboutme.json` and add your about me text
+- Add your `profile.jpeg`
 
 ### Compiles and hot-reloads for development
 ```
