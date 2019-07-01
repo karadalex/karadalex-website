@@ -1,12 +1,12 @@
 <template>
   <div id="app">
 		<template v-if="$route.name !== 'computer'">
-      <nav class="navbar navbar-expand-sm navbar-light">
+      <nav class="navbar navbar-expand-sm navbar-light container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="nav justify-content-center">
             <li class="nav-item active">
               <router-link class="nav-link" to="/home">Home</router-link>
             </li>
@@ -81,7 +81,20 @@ h1 {
   color: beige;
 }
 
+a.nav-link {
+  color: beige !important;
+}
+
+a.nav-link:focus {
+  outline: none;
+}
+
 .router-view {
   margin-bottom: 100px;
+}
+
+p {
+  padding-top: 20px;
+  font-size: 20px;
 }
 </style>
