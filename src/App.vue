@@ -29,7 +29,7 @@
               <router-link class="nav-link" to="/press">Press</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/">Switch View</router-link>
+              <router-link class="nav-link" to="/sim">Switch View</router-link>
             </li>
           </ul>
         </div>
@@ -64,11 +64,14 @@ export default {
 
 .background {
   position: absolute;
+}
+
+.background, .header-container {
   top: 0;
   left: 0;
   right: 0;
   z-index: -1;
-  height: 50vh;
+  height: 40vh;
 }
 
 h1 {
