@@ -28,6 +28,11 @@ yarn run serve
 yarn run build
 ```
 
+### Deployment to Github pages
+ 
+If you are deploying to https://<USERNAME>.github.io you can use the `deploy.sh` script. Make sure to 
+change `karadalex` with your username!
+
 ### Lints and fixes files
 ```
 yarn run lint
