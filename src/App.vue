@@ -35,7 +35,7 @@
         </div>
       </nav>
 		</template>
-    <router-view/>
+    <router-view class="router-view"/>
   </div>
 </template>
 
@@ -79,5 +79,9 @@ h1 {
   font-weight: 300;
   font-size: 5rem;
   color: beige;
+}
+
+.router-view {
+  margin-bottom: 100px;
 }
 </style>
