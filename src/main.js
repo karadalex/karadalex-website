@@ -1,13 +1,16 @@
 import Vue from 'vue'
-import { MdCard } from 'vue-material/dist/components'
-import 'vue-material/dist/vue-material.min.css'
-// import 'vue-material/dist/theme/default.css'
 import App from './App.vue'
 import router from './router'
 import store from './store'
 import './registerServiceWorker'
 
+import { MdButton, MdCard, MdRipple } from 'vue-material/dist/components'
+import 'vue-material/dist/vue-material.min.css'
+// import 'vue-material/dist/theme/default.css'
+
+Vue.use(MdButton)
 Vue.use(MdCard)
+Vue.use(MdRipple)
 
 Vue.config.productionTip = false
 

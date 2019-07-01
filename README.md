@@ -1,4 +1,9 @@
-# karadalex.github.io
+karadalex.github.io
+===================
+
+## Features
+
+- Load public Github repositories via Github API
 
 ## Project setup
 ```
