@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Post title 1",
+    "date": "Sep 29, 2018",
+    "readtime": "3",
+    "excerpt": "small paragraph",
+    "body": "full html body"
+  },
+  {
+    "title": "Post title 2",
+    "date": "Sep 29, 2018",
+    "readtime": "3",
+    "excerpt": "small paragraph",
+    "body": "full html body"
+  }
+]

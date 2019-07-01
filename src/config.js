@@ -1,3 +1,3 @@
-export default {
-  githubUser: "karadalex"
-}
+import Config from '../config.json'
+
+export default Config

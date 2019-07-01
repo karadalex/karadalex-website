@@ -9,6 +9,8 @@ karadalex.github.io
 ```
 yarn install
 ```
+- Rename `config.example.json` to `config.json` and fill your details
+- Rename `posts.example.json` (in the `src/content` directory) to `posts.json` and add your blog posts
 
 ### Compiles and hot-reloads for development
 ```
