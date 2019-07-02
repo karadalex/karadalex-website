@@ -51,50 +51,5 @@ export default {
 
 
 <style lang="scss">
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
-
-#app {
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-.background {
-  position: absolute;
-}
-
-.background, .header-container {
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 40vh;
-}
-
-h1 {
-  padding-top: 2rem;
-  font-weight: 300;
-  font-size: 5rem;
-  color: beige;
-}
-
-a.nav-link {
-  color: beige !important;
-}
-
-a.nav-link:focus {
-  outline: none;
-}
-
-.router-view {
-  margin-bottom: 100px;
-}
-
-p {
-  padding-top: 20px;
-  font-size: 20px;
-}
+@import './styles/main.scss';
 </style>
