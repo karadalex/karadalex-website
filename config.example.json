@@ -5,5 +5,10 @@
   "twitter": "username",
   "instagram": "username",
   "researchgate": "username",
-  "linkedin": "username"
+  "linkedin": "username",
+  "portfolio": {
+    "github": true,
+    "websites": true,
+    "hackaday": false
+  }
 }
