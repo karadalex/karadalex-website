@@ -35,7 +35,19 @@
         </div>
       </nav>
 		</template>
+
     <router-view class="router-view"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async type="application/javascript" :src="'https://www.googletagmanager.com/gtag/js?id='+gtag"></script>
+    <script type="application/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '{{gtag}}');
+    </script>
+
   </div>
 </template>
 
@@ -43,9 +55,12 @@
 <script>
 import jquery from 'jquery'
 import Collapse from '../node_modules/bootstrap/js/dist/collapse.js'
+import { mapState } from 'vuex'
 
 export default {
-  
+  computed: mapState({
+    gtag: state => state.config.ganalyticsTag
+  })
 }
 </script>
 

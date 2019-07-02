@@ -10,5 +10,6 @@
     "github": true,
     "websites": true,
     "hackaday": false
-  }
+  },
+  "ganalyticsTag": "gtag"
 }
